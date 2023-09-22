@@ -1,0 +1,18 @@
+body {
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+font-family: Arial;
+border: none;
+margin: none;
+padding: none;
+display: flex;
+flex-direction: column;
+row-gap: 25px;
+align-items: center;
+}
+
+h1{
+text-align: center;
+}
