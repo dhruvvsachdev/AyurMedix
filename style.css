@@ -17,6 +17,7 @@
 .bg::after {
     content: '';
     background-image: url(close-up-bowl-with-plants.jpg);
+    opacity:80%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -108,14 +109,14 @@
     font-size:20px;
     font-weight:lighter;
     font-family:'Mooli';
-    color:#B4B4B3
+    color:black;
 }
 .hero h1 {
     display: block;
     width: auto;
     justify-content: center;
     font-family:'Montserrat';
-    color:#B4B4B3;
+    color:black;
 }
 
 .hero h2 {
