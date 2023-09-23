@@ -31,7 +31,7 @@
 #title {
     width: 100%;
     height: 80px;
-    background-color:#84c261;
+    background-color:#CBFFA9;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -45,7 +45,6 @@
     letter-spacing: 2px;
     display: flex;
     align-items: center;
-    font-family:'Mooli';
 }
 
 .logo h3{
@@ -64,7 +63,7 @@
 .menu a.active,
 .menu a:hover {
     text-decoration: underline;
-    color: grey;
+    color:black;
 }
 
 .menu a:before {
@@ -74,7 +73,7 @@
     left: 0;
     width: 0%;
     height: 100%;
-    border-bottom: 2px solid #84c261;
+    border-bottom: 2px solid #CBFFA9;
     transition: 0.4s linear;
 }
 
@@ -95,7 +94,7 @@
 
 .register a:hover {
     background: transparent;
-    border: 1px solid #90b8f6;
+    border: 1px solid green;
 }
 
 .hero {
@@ -105,35 +104,40 @@
     margin-bottom: 10%;
     transition: 0.4s;
 }
-
+.hero p{
+    font-size:20px;
+    font-weight:lighter;
+    font-family:'Mooli';
+}
 .hero h1 {
     display: block;
     width: auto;
     justify-content: center;
+    font-family:'Montserrat';
 }
 
 .hero h2 {
     margin-bottom: 50px;
 }
 
+.col h3{
+font-family:'Mooli';
 
+}
 .col {
     float: left;
     padding: 3px;
     text-align: center;
+    font-family:'Mooli';
 }
 
-.col img {
-    height: 300px;
-    border-radius: 10px;
-}
 
 .col a {
     padding: 10px 20px;
     font-size: 20px;
     text-decoration: none;
     color: black;
-    background-color:#84c261;
+    background-color:#CBFFA9;
     border-radius: 10px;
 }
 
@@ -156,10 +160,10 @@
 .dabba {
 
     width: 100%;
-    margin-top: 5%;
+    margin-top:50%;
     margin-bottom: 3%;
     padding: 20px;
-    background-color:#84c261;
+    background-color:#CBFFA9;
     box-shadow: 0 2px 5px #FFFFD0(0, 0, 0, 0.1);
     animation: fade-in 0.5s ease;
     display: block;
@@ -218,13 +222,13 @@ button[type="submit"] {
     font-size: 20px;
     text-decoration: none;
     color: black;
-    background-color: #3677d3;
+    background-color:green;
 
 }
 
 button[type="submit"]:hover {
     background: transparent;
-    border: 1px solid #3677d3;
+    border: 1px solid #E6FFFD;
 }
 
 @media screen and (max-width: 909px) {
@@ -256,4 +260,9 @@ padding-bottom: 8px;
 
 .Send{
     padding:15px;
+}
+
+.hi{
+    text-align: center;
+    font-family:'Mooli';
 }
