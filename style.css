@@ -230,7 +230,7 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background: transparent;
-    border: 1px solid #E6FFFD;
+    border: 1px solid #426a37a0;
 }
 
 @media screen and (max-width: 909px) {

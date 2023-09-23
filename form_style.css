@@ -115,7 +115,8 @@
 .form{
     margin-top:20px;
     padding:10px;
-    margin-right:800px;
+    margin-right:700px;
     font-family:'Mooli';
     color:white;
+    background-color: rgba(0, 128, 0, 0.475);
 }
