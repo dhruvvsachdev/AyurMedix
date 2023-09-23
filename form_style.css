@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+.bg {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bg::after {
+    content: '';
+    background-image: url(close-up-bowl-with-plants.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.register input  {
+    
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    background:green;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.register input:hover {
+    background: transparent;
+    border: 1px solid green;
+}
+#title {
+    width: 100%;
+    height: 80px;
+    background-color:#CBFFA9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.logo {
+    font-size: 2em;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.logo h3{
+    font-family: 'Mooli';
+}
+
+
+.menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    position: relative;
+}
+
+.menu a.active,
+.menu a:hover {
+    text-decoration: underline;
+    color:black;
+}
+
+.menu a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid #CBFFA9;
+    transition: 0.4s linear;
+}
+
+.menu a:hover:before {
+    width: 90%;
+}
+
+.register a {
+    
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    background:green;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.register a:hover {
+    background: transparent;
+    border: 1px solid green;
+}
+
+.form{
+    margin-top:20px;
+    padding:10px;
+    margin-right:800px;
+    font-family:'Mooli';
+    color:white;
+}
