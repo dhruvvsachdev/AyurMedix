@@ -115,8 +115,36 @@
 .form{
     margin-top:20px;
     padding:10px;
-    margin-right:700px;
+    
     font-family:'Mooli';
     color:white;
     background-color: rgba(0, 128, 0, 0.475);
+    width: 600px;
+    text-align: center;
 }
+
+
+.form_design{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-size:20px;
+  }
+  
+
+  input, textarea{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width:400px;
+  }
+  
+  .register{
+    margin-left:0px;
+    padding:10px;
+  }
