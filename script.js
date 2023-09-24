@@ -1,68 +1,47 @@
-var symptomChecker = [
-    {
-      symptoms: ['fatigue', 'fever', 'sore throat', 'diarrhea'],
-      diagnosis: 'You are suffering from a common cold.',
-      medicine: 'Rest,drink plenty of water, use saline nasal rinses.',
-    },
-    {
-      symptoms: ['Fever', 'diarrhea','fatigue','Muscle aches'],
-      diagnosis: 'You are suffering from a flu.',
-      medicine: 'Rest and fluid intake.',
-    },
-    {
-      symptoms: ['shortness of breath', 'chest pain', 'fatigue'],
-      diagnosis: 'You are suffering from a heart condition.',
-      medicine: 'consult a doctor',
-    },
-    {
-      symptoms: ['High fever', 'rash','cough','stomach and muscle pain'],
-      diagnosis: 'You are suffering from a Typhoid.',
-      medicine: 'Antibiotics and fluid intake.',
-    },
-    {
-      symptoms: ['Itching','swelling'],
-      diagnosis: 'You are suffering from a Fungal infection.',
-      medicine: 'Antifungal  medication.',
-    },
-    {
-      symptoms: ['Itching','skin rash','facial swelling'],
-      diagnosis: 'You are suffering from a Allergy.',
-      medicine: 'Avoid allergens and steroids.',
-    },{
-      symptoms: ['Fever','headache','muscle aches','joint pain'],
-      diagnosis: 'You are suffering from a AIDS.',
-      medicine: 'Antiretroviral therapy.',
-    },
-    // Add more symptom-diagnosis pairs as needed
-  ];
-  
-  function checkSymptoms() {
-    var symptoms = document.getElementById("symptoms").value.toLowerCase();
-    var diagnosis = "No diagnosis found.";
-    var medicine = "No medicine found.";
-  
-    // Search for matching symptom set in the symptomChecker array
-    for (var i = 0; i < symptomChecker.length; i++) {
-      var matched = true;
-      var symptomSet = symptomChecker[i].symptoms;
-  
-      // Check if all symptoms in the set are present in the user's input
-      for (var j = 0; j < symptomSet.length; j++) {
-        if (symptoms.indexOf(symptomSet[j]) === -1) {
-          matched = false;
-          break;
-        }
-      }
-  
-      // If all symptoms are present, assign the corresponding diagnosis
-      if (matched) {
-        diagnosis = symptomChecker[i].diagnosis;
-        medicine = symptomChecker[i].medicine;
 
-        break;
-      }
-    }
+
+
+
+
+
+
+
+
+// Function to handle form submission
+function handleSubmit(event) {
+    event.preventDefault(); // Prevent the form from actually submitting
+    // Get user input from form fields
+    var name = document.querySelector('input[name="myName"]').value;
+    var age = document.querySelector('input[name="myAge"]').value;
+    var height = document.querySelector('input[name="myHeight"]').value;
+    var weight = document.querySelector('input[name="myWeight"]').value;
+    var symptoms = document.querySelector('input[name="mySymtom"]').value;
+    var medicalRecord = document.querySelector('input[name="myRecord"]').value;
+    var allergies = document.querySelector('input[name="myAllergy"]').value;
+    var disease = document.querySelector('input[name="myDisease"]').value;
   
-    document.getElementById("resultText").innerHTML = '<p>'+diagnosis + '</p>';
-    document.getElementById("resultText1").innerHTML = '<p>'+medicine + '</p>';
+    // Display user input on the webpage
+    var outputElement = document.createElement('div');
+    outputElement.className = 'user-information';
+    outputElement.innerHTML = `
+      <h2>User Information:</h2>
+      <p>Name: ${name}</p>
+      <p>Age: ${age}</p>
+      <p>Height: ${height} cm</p>
+      <p>Weight: ${weight} kg</p>
+      <h2>Health Information:</h2>
+      <p>Symptoms: ${symptoms}</p>
+      <p>Previous Medical Record: ${medicalRecord}</p>
+      <p>Allergies: ${allergies}</p>
+      <p>Disease: ${disease}</p>
+    `;
+  
+    // Append the user information to the form section
+    var formSection = document.querySelector('.form_design');
+    formSection.appendChild(outputElement);
   }
+  
+  // Add an event listener to the form for submission
+  var form = document.querySelector('form');
+  form.addEventListener('submit', handleSubmit);
+  
