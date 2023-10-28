@@ -11,6 +11,19 @@
   *::after {
     box-sizing: border-box;
   }
+
+  .logo {
+    font-size: 2em;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.logo h3{
+    font-family: 'Mooli';
+    font-weight: lighter;
+    font-size:1.5rem;
+}
   
   body{
     font-family: 'Poppins', sans-serif;
